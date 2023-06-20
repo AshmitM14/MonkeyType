@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkeytype | A minimalistic, customizable typing test</title>
+    <link id="favicon" rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABAtJREFUeF7tW11IFFEU/u7q+rOpaZq6qVFmZGGE4+gKQUQ9RiX0YEEQFUH08yhFFkRmkL1UVvRSJP1QD6X5Ej4UPlj4M65CQpqVUJqVZlqZ+bc37q6zqTuzf8o6szMXfPGec88535xz7rl37yHwYvA8n2WDYTMlBp5QmgmCVFAsARDpBXsgSEZAMACKbkpIO6E2wQBbrSAIbZ6EE3cEObmWI5TiIADO00IKnbcSglvNTQ035PSTBCCbz99BQC8CyFSoYb6q1U5BTrQI9dWzGV0A4Pi8UwAp9VWCOuhpsVVovDBd1xkABLfxotkzQXACMOX2T9XxJeemJQXZKYaDEwCOt7wJopj3hFC7VWhYy4jsAExl++ueuIJpnhAcZbuDHQCOtzSreKvz97tYrUJDDnEUOSGv/V1FzXwGTK4nHJ93DCDlajbEf93pcZKdm3+HULrP/0XUy0kJqSAcb6kHYFGvGXPSvIFwuZZuUKTMaRm1MhP0MA/4o6BTXaChHGEA0EBLVZI8HQDdA/QQUG8OqCp575JOCs6s8inFqDoH6ADoHqCwEDDHjyMyzIYPveFex2F8zATioifR02/EyKjBaz5GGLAQkBJ0+vYytHVFomDjIDZt+I2UhDGEGx011eg4QfvHCHT1huNOTbyLUbu3DCDdPIZ08ygSFk8457v7wiB0mCR5zh/4jKyVIz4BxIiZjkxXueFVEpQDYNemQWRnsEpafjy3RqO8MtFOYAylOLy9D1u5X255Wt+ZcK1qKfqHQp10igPAZgMMXnps9atYPGuMwaFt/eBWuwdMtLipw4TSe2blAuCrL7K8wFzel1F6LxlNHYvsLIrzANGQoeEQfPoWZk98a9L+2v+8Gb0DRrR2mpCWOCYb29O9QJEAvGyLwqVHSTPs3Zj1G0WFX2Ux+P4zFGUPk9DxKcJJk5EyiuK9vYiLmnThKzyXbk+qUgmQgTJ7SCU8lgjnPQmyRHW24n+MThcgB8LEJEHp/WS0dJpc9MlfN4yTe764/H9/2Qr8+BUiqf+CboNVdbGS2xXTNMxI8aC4C6EhM68aalujcfmxY0eYPeR4jl5Zbq8RpMaCAnD1SSJetETLupZUzFbUxKOyLtYnnqKbqejskS6sFhQAsRCSs0YKgJK7ZjS/dXV/cQ0pHndyVAeAP6DpAEyV3IrLAfP9NeWKHd0DdA9wnDr1EJBAQN8FAnUl5u5CxJc6YL4Tp+4BugcE6FJU8yEgdxnp7pwdCB4pGe50kspXXl2Kyh7fgmBCB0D/eVzzT2T0R1IafyanP5TU+lNZzT+WZrWMpp/LMwA03zAx5QXabZlhAGi+acrhBcHcMyie3GTa5sTp4AbBQ+OkCIKmW2enH/E12zw9+54jmNvn/wGWc9InW+01NQAAAABJRU5ErkJggg=="">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'projbeta/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <header class="header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+    <img id="logo" src="{% static 'projbeta/Screenshot (40).png' %}">
+    <a class="navbar-brand title mt-2 mr-3" href="/">monkeytype</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <div id="see" class="text-muted"> monkey see</div>
+        </li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+  </header>
+    {% block body %}{% endblock %}
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link link" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="https://github.com/AshmitM14" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="https://discord.com/users/id/910010366870822922" target="_blank">Discord</a>
+            </li>
+            
+          </ul>
+        </div>
+        </nav>
+    </footer>
+</body>
+

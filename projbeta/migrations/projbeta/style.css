@@ -1,0 +1,19 @@
+textarea{
+    color: darkcyan;
+    caret-color: orange;
+    font-size: 1em;
+    font-family: 'Roboto Mono';
+    height: 556px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: unset;
+    transition: all 0.25s ease 0s;
+    border: none;
+    outline: none;
+}
+
+#timer{
+    color: orange;
+    font-size: 1.;
+    opacity: 1;
+}

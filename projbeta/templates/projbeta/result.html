@@ -1,0 +1,11 @@
+{% extends 'projbeta/basic.html'%}
+
+{% block body %}
+<div class="container">
+    <pre class="text-muted wres">    raw wpm    net wpm    mistakes    accuracy</pre>
+    <pre class="res orange">   {{wpm}}     {{net_wpm}}    {{mistakes}}    {{acc}}%</pre>
+    <a class="nav-link" href="/">Try one more time!</a>
+</div>
+
+
+{% endblock %}

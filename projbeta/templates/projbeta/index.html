@@ -1,0 +1,16 @@
+{% extends 'projbeta/basic.html' %}
+{% load static %}
+{% block body %}
+<div class="container">
+<div class="box">
+    <div class="lang text-muted mb-2">english</div>
+</div>
+<div id="timer"></div>
+<span class="mb-10 orange">{{rpara}}</span>
+<form method="get" action="/result/" id="form" autocomplete="off" a>
+    {% csrf_token %}
+    <textarea class="bg-dark" name="words" id="tinput" placeholder="Type Here"></textarea>
+</form>
+</div>
+<script src="{% static 'projbeta/app.js' %}"></script>
+{% endblock %}
