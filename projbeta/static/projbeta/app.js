@@ -1,7 +1,7 @@
 let timerStarted = true;
 document.getElementsByName('words')[0].oninput = function() {
     if (timerStarted) {
-        let sec = 5;
+        let sec = 30;
         let timer = setInterval(() => {
             let new_sec = sec--;
             if (new_sec === 0) {
