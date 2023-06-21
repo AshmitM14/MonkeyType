@@ -34,17 +34,15 @@ arr = [
      'Birds sangin harmony, celebrating the symphony of nature. The aroma of freshly brewed coffee enveloped the cafe, drawing in weary souls seeking a moment of respite. The rich flavors embraced their senses with warmth.',
      'The sound of children\'s laughter echoed in the playground, a chorus of joy and innocence. Swings soared through  the air, reaching for the sky with each push. Fields of lavender stretched endlessly, their vibrant purple hues painting the landscape.',
      'The air was perfumed with the flower\'s delicate fragrance, soothing the spirit. The crackling of leaves underfoot announced the arrival of autumn. Nature\'s palette transformed, unveiling shadesof gold, copper, and burgundy.',
-     'The fragrance of freshly baked bread wafted from the neighborhood bakery, beckoning passersby with its  irresistible allure. Crusty loaves promised culinary delight.',
-     'Raindrops tapped on the windowpane, creating a symphony of rhythm and melody. Each drop carried the promise of  growth and rejuvenation.',
+     'The fragrance of freshly baked bread wafted from the neighborhood bakery, beckoning passersby with its  irresistible allure. Crusty loaves promised culinary delight. Raindrops tapped on the windowpane, creating a symphony of rhythm and melody. Each drop carried the promise of  growth and rejuvenation.',
      'The sound of footsteps echoed in the empty gallery, where art whispered stories of passion and creativity. Paintings hung in silence, inviting contemplation.',
      'A gentle breeze carried the sweet scent of wildflowers, painting the meadow in a tapestry of colors. Butterflies fluttered among the blossoms, dancing with grace.',
-     'The aroma of freshly squeezed citrus filled the kitchen, awakening the senses with its vibrant tang. Each sip of juice held a burst of sunshine.',
+     'The aroma of freshly squeezed citrus filled the kitchen, awakening the senses with its vibrant tang. Each sip of juice held a burst of sunshine. Birds chirped in the early morning, heralding the arrival of a new day.',
      'Waves crashed against the rocky cliffs, their relentless power shaping the rugged coastline. Seashells were  treasures washed ashore, gifts from the ocean\'s depths.',
      'The sound of a crackling fireplace filled the cozy cabin, providing warmth and comfort on a chilly evening. A peaceful garden offered sanctuary from the chaos of the world. Fragrant flowers bloomed, inviting visitors to pause, breathe, and find solace in nature\'s embrace.',
-     'Birds chirped in the early morning, heralding the arrival of a new day. The sun\'s rays illuminating the world with hope and possibilities. Embers glowed, casting a soft glow on faces gathered around.',
-     'The fragrance of blooming roses permeated the garden, evoking romance and beauty. Each petal held a secret whispered by nature\'s delicate touch. Sunlight filtered through the branches, casting patterns on the forest floor.',
-     'The rustling of leaves in the forest created a symphony of nature\'s music.The sound of distant laughter drifted on the breeze, a reminder of joy shared among friends. Memories were woven into the fabric of time, forever cherished.',
-     'The sun began to set, casting a warm glow across the tranquil lake. Birds chirped in the distance, creating a soothing symphony of sounds. Its weathered bark told stories of countless seasons gone by.',
+     'The fragrance of blooming roses permeated the garden, evoking romance and beauty. Each petal held a secret whispered by nature\'s delicate touch. The sun\'s rays illuminating the world with hope and possibilities. Embers glowed, casting a soft glow on faces gathered around.',
+     'The sound of distant laughter drifted on the breeze, a reminder of joy shared among friends. Memories were woven into the fabric of time, forever cherished. Sunlight filtered through the branches, casting patterns on the forest floor.',
+     'The sun began to set, casting a warm glow across the tranquil lake. Birds chirped in the distance, creating a soothing symphony of sounds. Its weathered bark told stories of countless seasons gone by. The rustling of leaves in the forest created a symphony of nature\'s music.',
      'Waves crashed against the rocky shoreline, sending sprays of water into the air. Seagulls circled above, theircalls echoing in the salty breeze. The old oak tree stood tall and proud, its branches reaching towards the heavens.',
      'As the rain fell softly, flowers eagerly drank in the refreshing drops. Petrichor filled the air, awakening the senses and bringing a sense of renewal. The cityscape shimmered with lights and life.',
      'The sound of laughter echoed through the park as children played on the swings. Parents watched with joy, their hearts filled with love and pride. The moon cast a gentleglow, illuminating the world below. In the bustling city streets, people hurried by, their footsteps blending into a rhythmic melody.',
@@ -58,10 +56,13 @@ arr = [
      'The scent of lavender filled the air as a gentle breeze swept through the fields. Bees buzzed from flower to  flower, spreading nature\'s sweet embrace. A cozy fireplace crackled in the cabin, casting a warm glow on the wooden walls.', "This website is made by Ashmit Mahindroo who is a 8th grader studying in Sanskriti School and is a member of the computer club of the school ProjectBeta. This website is made with Python as its programming language."
 ]
 
-x = random.randint(0,55)
-rpara = arr[x]
+print(len(arr))
+
 
 def index(request):
+    x = random.randint(0,53)
+    global rpara
+    rpara = arr[x]
     params = {'rpara':rpara}
     return render(request, 'projbeta/index.html', params)
 
