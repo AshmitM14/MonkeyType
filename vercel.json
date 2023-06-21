@@ -17,6 +17,9 @@
         {
             "src": "/(.*)",
             "dest": "monkeytype/wsgi.py"
+        },
+        {
+            "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
         }
     ]
 }
