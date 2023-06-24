@@ -6,7 +6,8 @@ span, #tinput{
     font-family: 'Roboto Mono', monospace;
     border: none;
     outline: none;
-}
+    user-select: none;
+    }
 
 .orange{
     color: orange;

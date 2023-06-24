@@ -56,8 +56,6 @@ arr = [
      'The scent of lavender filled the air as a gentle breeze swept through the fields. Bees buzzed from flower to  flower, spreading nature\'s sweet embrace. A cozy fireplace crackled in the cabin, casting a warm glow on the wooden walls.', "This website is made by Ashmit Mahindroo who is a 8th grader studying in Sanskriti School and is a member of the computer club of the school ProjectBeta. This website is made with Python as its programming language."
 ]
 
-print(len(arr))
-
 
 def index(request):
     x = random.randint(0,53)
